@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sawera's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Profile Section -->
+    <header class="profile-section">
+        <div class="profile-container">
+            <img src="images/pic3.jpeg" alt="profileimage"
+                style="width: 150px; border-radius: 50%;" />
+            <div class="intro-text">
+                <h1 style="color: teal;">Hi, I'm Sawera</h1> <!-- Inline CSS -->
+                <p>AI Powered Full Stack Web Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Sawera here. I am learning full-stack web development with MERN stack. I enjoy building responsive and user-friendly
+            websites. I aim to be job-ready soon!</p>
+        <p>Currently focusing on my Frontend side and would love to explore backend.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5, CSS3,Tailwind CSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js & Node.js</li>
+            <li>MongoDB, Git & GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SMC Group</td>
+                    <td>Web Intern</td>
+                    <td>3 Months</td>
+                </tr>
+                <tr>
+                    <td>Interwood</td>
+                    <td>Frontend Developer</td>
+                    <td>6 Months</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br /><br />
+
+            <button type="submit"
+                style="background-color: teal; color: white; padding: 10px 20px; border: none;">Send</button>
+        </form>
+    </section>
+</body>
+
+</html>
